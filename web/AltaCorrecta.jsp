@@ -22,12 +22,16 @@
                 <span class="focus-input100"> </span>
         <h1>Genial!!</h1> 
         <h2> Ha ingresado correctamente un libro!</h2>
-               
+               <div class="container-login100-form-btn">
+            <form action="index.jsp" method="POST">
+		<INPUT class="login100-form-btn" type="submit" value="VOLVER">
+	    </div>
                              
                                   </div>
                              </span>
                         </div>
                 </div>
          </div>
+        
     </body>
 </html>
