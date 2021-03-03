@@ -3,6 +3,8 @@ package Logica;
 //nexo entre el Servlet y la Controladora de Persistencia:
 
 import Persistencia.ControladoraPersistencia;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Controladora {
     
@@ -35,5 +37,20 @@ public class Controladora {
         
         controlPersis.crearLibro(libro);
     }
-    
+    //metodo para comprobar el ingreso desde el login:
+     public boolean comprobarIngreso(String usuario, String contra) {
+        boolean siOno = false;
+        List<Usuario> listaUsuarios = new ArrayList<Usuario>();
+        listaUsuarios = controlPersis.getUsuarios();
+        
+        for(Usuario usu:listaUsuarios){
+            
+            if(usu.getNombreUsuario().equals(usuario) && usu.getContrasenia().equals(contra)){
+                
+                siOno=true;
+                return siOno;
+            }
+        }
+        return siOno;
+    }
 }

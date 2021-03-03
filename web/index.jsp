@@ -14,7 +14,7 @@
 		<div class="container-login100">
 			<div class="wrap-login100">
                              <span class="login100-form-title">
-                Bienvenido al Sistema de Biblioteca<br>
+                
                      Ingrese los datos requeridos
 					</span>
          <form action="ServletPrueba" method="POST">
@@ -35,11 +35,10 @@
                 <option>Vendido</option>
                 <option>Prestado</option>
                 
-            </select><br><br>
-             
+            </select><br> 
             </div>
             <div class="container-login100-form-btn">
-		<INPUT class="login100-form-btn" type="submit" value="ENVIAR">
+                <p align="right"><INPUT class="login100-form-btn" type="submit" value="ENVIAR"></p>
 	    </div>
                         </div>
                     </div>
